@@ -1,0 +1,19 @@
+export interface CompletionItem {
+    /**
+     * The label of this completion item. By default
+     * also the text that is inserted when selecting
+     * this completion.
+     */
+    label: string;
+    /**
+     * The kind of this completion item. Based of the kind
+     * an icon is chosen by the editor.
+     */
+    kind?: CompletionItemKind;
+    /**
+     * Tags for this completion item.
+     *
+     * @since 3.15.0
+————————————————
+版权声明：本文为CSDN博主「Mino.66」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/luoluoyang23/article/details/124543453
