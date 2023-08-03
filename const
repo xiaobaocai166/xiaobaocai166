@@ -1,0 +1,16 @@
+void Foo(RpcController* ctrl,
+         const FooRequest* request,
+         FooResponse* response,
+         Closure* done)
+{
+    Status status = Check1(request);
+    if (!status.IsOk())
+    {
+        response->set_errorcode(status.Code());
+        // 第一处
+        done->Run();
+        return;
+    }
+    status = Check2(request);
+    if (!status.IsOk())
+    
