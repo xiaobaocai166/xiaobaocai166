@@ -1,0 +1,7 @@
+   fileOutStream = new FileOutputStream(outFilename); 
+        fileOutStream.write(bytes); 
+        fileOutStream.flush(); 
+        fileOutStream.close(); 
+        fileOutStream = null; 
+      } 
+      finally 
