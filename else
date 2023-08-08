@@ -1,0 +1,15 @@
+ else { 
+            setCreateDate(actdate); 
+            setActivateDate(actdate); 
+        } 
+         
+	   	setDeActivateDate(deactdate); 
+        setSalutation(salutation); 
+        setIsEnabled(enabled); 
+        setUniqueDeviceId(uniqueDeviceId); 
+        setIsPrepay(isprepay); 
+    } 
+ 
+    public SampleUserImpl(User inUser) { 
+     
+        fInfo = new Hashtable(); 
