@@ -1,0 +1,11 @@
+   Configuration config = DatabaseManager.createConfigurationFile( "Demo1.ulj" );
+
+            Connection conn = DatabaseManager.createDatabase( config );
+            conn.schemaCreateBegin();
+    
+            TableSchema table_schema = conn.createTable( "Employee" );
+            table_schema.createColumn( "number", Domain.INTEGER );
+            table_schema.createColumn( "last_name", Domain.VARCHAR, 32 );
+            table_schema.createColumn( "first_name", Domain.VARCHAR, 32 );
+            table_schema.createColumn( "age", Domain.INTEGER );
+            table_schema.createColumn( "dept_no", Domain.INTEGER );
