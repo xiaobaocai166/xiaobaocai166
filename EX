@@ -1,0 +1,5 @@
+#EXEC_LCP="${EXEC_LCP}:${CDSLIB_DIR}/eventserviceclient.jar" 
+#EXEC_LCP="${EXEC_LCP}:${WL_HOME}/lib/weblogic.jar" 
+ 
+# Java Command Line Option Constants 
+CDS_OPTS="-Dcds.home=${CDS_HOME}" 
